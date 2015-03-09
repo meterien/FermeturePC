@@ -68,10 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ControleurEtats.cs" />
-    <Compile Include="frmAvertissement.cs" />
-    <Compile Include="frmAvertissement.Designer.cs">
-      <DependentUpon>frmAvertissement.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmFermeture.cs" />
     <Compile Include="frmFermeture.Designer.cs">
       <DependentUpon>frmFermeture.cs</DependentUpon>
@@ -180,9 +176,6 @@
     <None Include="Images\ÉcoleSt-Martin.JPG" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmAvertissement.resx">
-      <DependentUpon>frmAvertissement.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmFermeture.resx">
       <DependentUpon>frmFermeture.cs</DependentUpon>
     </EmbeddedResource>
