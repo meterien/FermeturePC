@@ -106,6 +106,10 @@ namespace FermeturePC
 			/// Texte de description du bouton annuler
 			/// </summary>
 			public string texteAnnuler;
+			/// <summary>
+			/// Le logo à afficher sur le formulaire
+			/// </summary>
+			public string logo;
 		}
 		private XmlDocument configuration;
 		/// <summary>
@@ -178,6 +182,8 @@ namespace FermeturePC
 			Text = listeParametres.titre;
 			// Message de description
 			lblDescription.Text = listeParametres.description;
+			// Logo
+			ChargerLogo(listeParametres.logo);
 			// Valeurs et textes des boutons qui retardent la fermeture
 			tempsBtn1 = Convert.ToInt16(listeParametres.valeurBouton1);
 			btnAjouter10.Text = listeParametres.texteBouton1;
@@ -206,6 +212,7 @@ namespace FermeturePC
 		{
 			try
 			{
+				listeParametres = new DesParametres();
 				listeParametres.titre = "Fermeture des ordinateurs pédagogiques";
 				listeParametres.description = "Pour économiser de l'énergie, cet ordinateur va être arrêté pour la nuit. Pour éviter tout désagrément, nous vous recommandons fortement de sauvegarder votre travail en cours. Merci de votre collaboration.";
 				listeParametres.delaiMaximum = 99999;
@@ -223,6 +230,7 @@ namespace FermeturePC
 				listeParametres.texteBouton3 = "30 secondes";
 				listeParametres.texteBoutons = "Ajouter du temps pour retarder l'arrêt";
 				listeParametres.texteAnnuler = "Annuler la fermeture et retourner au bureau";
+				listeParametres.logo = "Logo.png";
 			}
 			catch(Exception e)
 			{
@@ -240,7 +248,6 @@ namespace FermeturePC
 			try
 			{
 				Arguments arguments = new Arguments(m_args);
-				listeParametres = new DesParametres();
 				if(arguments["ConfigXML"] != null) { listeParametres.fichierXML = arguments["ConfigXML"]; }
 				if(arguments["Id"] != null) { listeParametres.id = arguments["Id"]; }
 				configuration = new XmlDocument();
@@ -269,6 +276,7 @@ namespace FermeturePC
 							if(param["DescriptionBoutons"].InnerText != null) { listeParametres.texteBoutons = param["DescriptionBoutons"].InnerText; }
 							if(param["DescriptionAnnuler"].InnerText != null) { listeParametres.texteAnnuler = param["DescriptionAnnuler"].InnerText; }
 							if(param["AuDessusDeTout"].InnerText != null) { listeParametres.auDessus = Convert.ToInt32(param["AuDessusDeTout"].InnerText); }
+							if(param["Logo"].InnerText != null && File.Exists(param["Logo"].InnerText)) { listeParametres.logo = param["Logo"].InnerText; }
 			        	}
 			        } 
 				}
@@ -285,7 +293,22 @@ namespace FermeturePC
 			if(listeParametres.titre == "") { return false; }
 			return true;
 		}
-		
+		/// <summary>
+		/// Essaie de charger une image
+		/// </summary>
+		/// <param name="nomFichier"></param>
+		private void ChargerLogo(string nomFichier)
+		{
+		    try
+		    {
+		        Bitmap unLogo = (Bitmap) Image.FromFile(nomFichier, true);
+		        this.pbLogo.BackgroundImage = unLogo;
+		    }
+		    catch(System.IO.FileNotFoundException)
+		    {
+		        //MessageBox.Show("There was an error opening the bitmap." + "Please check the path.");
+		    }
+		}
 		/// <summary>
 		/// Ferme le programme en cliquant sur le bouton annuler
 		/// </summary>

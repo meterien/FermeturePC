@@ -158,6 +158,12 @@
             Valide et charge les valeurs des paramètres
             </summary>
         </member>
+        <member name="M:FermeturePC.frmFermeture.ChargerLogo(System.String)">
+            <summary>
+            Essaie de charger une image
+            </summary>
+            <param name="nomFichier"></param>
+        </member>
         <member name="M:FermeturePC.frmFermeture.BtnAnnulerClick(System.Object,System.EventArgs)">
             <summary>
             Ferme le programme en cliquant sur le bouton annuler
@@ -309,6 +315,11 @@
         <member name="F:FermeturePC.frmFermeture.DesParametres.texteAnnuler">
             <summary>
             Texte de description du bouton annuler
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.logo">
+            <summary>
+            Le logo à afficher sur le formulaire
             </summary>
         </member>
         <member name="T:FermeturePC.ObjInfosOrdinateur">

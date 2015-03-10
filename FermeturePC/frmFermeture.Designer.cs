@@ -37,7 +37,7 @@ namespace FermeturePC
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFermeture));
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.pbLogo = new System.Windows.Forms.PictureBox();
 			this.lblDescription = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.btnAnnuler = new System.Windows.Forms.Button();
@@ -50,20 +50,20 @@ namespace FermeturePC
 			this.lblInfoOrdinateur = new System.Windows.Forms.Label();
 			this.lblTempsRestant = new System.Windows.Forms.Label();
 			this.pnlForm = new System.Windows.Forms.Panel();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
 			this.panel2.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.pnlForm.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// pictureBox1
+			// pbLogo
 			// 
-			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(172, 157);
-			this.pictureBox1.TabIndex = 4;
-			this.pictureBox1.TabStop = false;
+			this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pbLogo.Location = new System.Drawing.Point(3, 3);
+			this.pbLogo.Name = "pbLogo";
+			this.pbLogo.Size = new System.Drawing.Size(172, 157);
+			this.pbLogo.TabIndex = 4;
+			this.pbLogo.TabStop = false;
 			// 
 			// lblDescription
 			// 
@@ -186,7 +186,7 @@ namespace FermeturePC
 			// 
 			// pnlForm
 			// 
-			this.pnlForm.Controls.Add(this.pictureBox1);
+			this.pnlForm.Controls.Add(this.pbLogo);
 			this.pnlForm.Controls.Add(this.panel3);
 			this.pnlForm.Controls.Add(this.panel2);
 			this.pnlForm.Controls.Add(this.lblTempsRestant);
@@ -203,14 +203,13 @@ namespace FermeturePC
 			this.ClientSize = new System.Drawing.Size(526, 429);
 			this.ControlBox = false;
 			this.Controls.Add(this.pnlForm);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "frmFermeture";
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Fermeture de l\'ordinateur";
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel3.ResumeLayout(false);
 			this.pnlForm.ResumeLayout(false);
@@ -229,6 +228,6 @@ namespace FermeturePC
 		private System.Windows.Forms.Label lblDescription;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel panel3;
-		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox pbLogo;
 	}
 }

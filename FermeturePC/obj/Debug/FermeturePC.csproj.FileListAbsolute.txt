@@ -1,11 +1,3 @@
-C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\bin\Debug\FermeturePC.exe.config
-C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\bin\Debug\FermeturePC.exe
-C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\bin\Debug\FermeturePC.pdb
-C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\obj\Debug\FermeturePC.csprojResolveAssemblyReference.cache
-C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\obj\Debug\FermeturePC.frmFermeture.resources
-C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\obj\Debug\FermeturePC.csproj.GenerateResource.Cache
-C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\obj\Debug\FermeturePC.exe
-C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\obj\Debug\FermeturePC.pdb
 F:\Devs\GitHub\FermeturePC\FermeturePC\bin\Debug\FermeturePC.exe.config
 F:\Devs\GitHub\FermeturePC\FermeturePC\bin\Debug\FermeturePC.xml
 F:\Devs\GitHub\FermeturePC\FermeturePC\bin\Debug\FermeturePC.exe
@@ -14,3 +6,12 @@ F:\Devs\GitHub\FermeturePC\FermeturePC\obj\Debug\FermeturePC.frmFermeture.resour
 F:\Devs\GitHub\FermeturePC\FermeturePC\obj\Debug\FermeturePC.csproj.GenerateResource.Cache
 F:\Devs\GitHub\FermeturePC\FermeturePC\obj\Debug\FermeturePC.exe
 F:\Devs\GitHub\FermeturePC\FermeturePC\obj\Debug\FermeturePC.pdb
+C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\bin\Debug\FermeturePC.exe.config
+C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\bin\Debug\FermeturePC.xml
+C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\bin\Debug\FermeturePC.exe
+C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\bin\Debug\FermeturePC.pdb
+C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\obj\Debug\FermeturePC.csprojResolveAssemblyReference.cache
+C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\obj\Debug\FermeturePC.frmFermeture.resources
+C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\obj\Debug\FermeturePC.csproj.GenerateResource.Cache
+C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\obj\Debug\FermeturePC.exe
+C:\personnel\PROGRAMMATION\GitFermeturePC\FermeturePC\obj\Debug\FermeturePC.pdb
