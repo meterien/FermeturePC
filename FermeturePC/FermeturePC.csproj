@@ -19,6 +19,11 @@
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <DocumentationFile>bin\Debug\FermeturePC.xml</DocumentationFile>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Josua\AppData\Roaming\ICSharpCode\SharpDevelop5\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -47,26 +52,6 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Management" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="ControleurEtats.cs" />
     <Compile Include="frmFermeture.cs" />
     <Compile Include="frmFermeture.Designer.cs">
@@ -79,101 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Images\Blitz_tremplin.jpg" />
-    <None Include="Images\carrefour couleur.jpg" />
-    <None Include="Images\Carrefour_nouveau.jpg" />
-    <None Include="Images\Carrefour_nouveauNB.jpg" />
-    <None Include="Images\CFP horz pas fond.jpg" />
-    <None Include="Images\CFP-Bloc_high.bmp" />
-    <None Include="Images\CFP-Bloc_high.GIF" />
-    <None Include="Images\CFP-Bloc_high.jpg" />
-    <None Include="Images\CFP-Bloc_high.TIF" />
-    <None Include="Images\CFP-verti_high.jpg" />
-    <None Include="Images\clipart.zdx" />
-    <None Include="Images\clthumbs.zdx" />
-    <None Include="Images\Concorde.jpg" />
-    <None Include="Images\concorde_coul.png" />
-    <None Include="Images\concorde_coul.svg" />
-    <None Include="Images\concorde_nb.png" />
-    <None Include="Images\concorde_nb.svg" />
-    <None Include="Images\Crayon.bmp" />
-    <None Include="Images\csob.ico" />
-    <None Include="Images\CSOBAdr.jpg" />
-    <None Include="Images\CSOBlogo_nb_jpeg_sans fond.gif" />
-    <None Include="Images\CSOBNB_jpeg.jpg" />
-    <None Include="Images\CSOBNB_tif.TIF" />
-    <None Include="Images\CSOB_blanc_sans fond.gif" />
-    <None Include="Images\CSOB_carré.JPG" />
-    <None Include="Images\CSOB_jpeg.JPG" />
-    <None Include="Images\CSOB_Sans fond.gif" />
-    <None Include="Images\Ensemble Filons_nb sans fond.gif" />
-    <None Include="Images\Ensemble Filons_nb.jpg" />
-    <None Include="Images\Explorateurs %28sans texte%29.JPG" />
-    <None Include="Images\Explorateurs avec texte.JPG" />
-    <None Include="Images\Explorateurs_orange.jpg" />
-    <None Include="Images\express_concorde.jpg" />
-    <None Include="Images\Fatima.JPG" />
-    <None Include="Images\Fritz Quadrata.zip" />
-    <None Include="Images\gpi_internet_ecole.jpg" />
-    <None Include="Images\GPi_internet_maison.jpg" />
-    <None Include="Images\Harmonie vent de l%27Or.doc" />
-    <None Include="Images\Horizon.jpg" />
-    <None Include="Images\Horizon_logo.ai" />
-    <None Include="Images\Horizon_logo.jpg" />
-    <None Include="Images\iconeArret.ico" />
-    <None Include="Images\intrepides-eclair.jpg" />
-    <None Include="Images\Intrepides.eps" />
-    <None Include="Images\Intrepides.jpg" />
-    <None Include="Images\Intrepides_transparent.jpg" />
-    <None Include="Images\letransit.tif" />
-    <None Include="Images\LeTremplin.rgb.gif" />
-    <None Include="Images\Liste de contrôle.txt" />
-    <None Include="Images\LOGO 40E.jpg" />
-    <None Include="Images\logo cfp.GIF" />
-    <None Include="Images\Logo OSISKO.doc" />
-    <None Include="Images\logo st-sauveur.doc" />
-    <None Include="Images\Logo Ste-Lucie.jpg" />
-    <None Include="Images\logo transit jpg  a.JPG" />
-    <None Include="Images\logo transit jpg b.JPG" />
-    <None Include="Images\LOGO VACHE À MAILLOTTE.jpg" />
-    <None Include="Images\LOGO1.BMP" />
-    <None Include="Images\LOGO3.BMP" />
-    <None Include="Images\LOGO4.BMP" />
-    <None Include="Images\logocarrefournoirblanc.txt" />
-    <None Include="Images\LogoFond.gif" />
-    <None Include="Images\Logo_EnsembleFilons.gif" />
-    <None Include="Images\LOUVE" />
-    <None Include="Images\MELS.bmp" />
-    <None Include="Images\nda.JPG" />
-    <None Include="Images\osisko-École des explorateurs.pdf" />
-    <None Include="Images\Police du Logo Gras.TTF" />
-    <None Include="Images\Police du Logo Régulier.TTF" />
-    <None Include="Images\reseau_ado.JPG" />
-    <None Include="Images\reseau_ado_NB.tif" />
-    <None Include="Images\ressources_naturelles.docx" />
-    <None Include="Images\Serre des Tournesols.cmyk.eps" />
-    <None Include="Images\Serre des Tournesols.jpg" />
-    <None Include="Images\Serre des Tournesols.pant.ai" />
-    <None Include="Images\Serre des Tournesols.pant.eps" />
-    <None Include="Images\St-Joseph.doc" />
-    <None Include="Images\St-Joseph.gif" />
-    <None Include="Images\Ste-Lucie.gif" />
-    <None Include="Images\Symbole-Slogan Apprendre....jpg" />
-    <None Include="Images\Thumbs.db" />
-    <None Include="Images\traitunion_coul_haute_def.gif" />
-    <None Include="Images\traitunion_nb.eps" />
-    <None Include="Images\traitunion_nb_haute_def.gif" />
-    <None Include="Images\trait_union.eps" />
-    <None Include="Images\trait_union.gif" />
-    <None Include="Images\trait_union_haute_def.gif" />
-    <None Include="Images\TRANSIT.BMP" />
-    <None Include="Images\transit1.gif" />
-    <None Include="Images\TRANSIT2.BMP" />
-    <None Include="Images\TRANSITNB.bmp" />
-    <None Include="Images\Tremplin.gif" />
-    <None Include="Images\tremplin2" />
-    <None Include="Images\Victoire-final_transparent.png" />
-    <None Include="Images\ÉcoleSt-Martin.JPG" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmFermeture.resx">
@@ -182,7 +72,27 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images" />
-    <Folder Include="Images" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System.Management.Instrumentation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,46 +29,138 @@ using System.Linq;
 namespace FermeturePC
 {
 	/// <summary>
-	/// Description of MainForm.
+	/// Formulaire principal de l'application
 	/// </summary>
 	public partial class frmFermeture : Form
 	{
+		/// <summary>
+		/// Structure contenant les paramètres configurables depuis le fichiers XML
+		/// </summary>
 		public struct DesParametres
 		{
+			/// <summary>
+			/// Titre de la fenêtre
+			/// </summary>
 			public string titre;
+			/// <summary>
+			/// Message afficher au centre du formulaire
+			/// </summary>
 			public string description;
+			/// <summary>
+			/// Délai maximal autorisé
+			/// </summary>
 			public int delaiMaximum;
+			/// <summary>
+			/// Délai initial lors du lancement de l'application
+			/// </summary>
 			public int delaiMinimum;
+			/// <summary>
+			/// Délai où le formulaire sera maximisé
+			/// </summary>
 			public int delaiAvertissement;
+			/// <summary>
+			/// Force ou non la fermeture lorsque le fichier xml n'est pas lisible
+			/// </summary>
 			public bool obligatoire;
+			/// <summary>
+			/// Chemin duquel lire le fichier XML
+			/// </summary>
 			public string fichierXML;
+			/// <summary>
+			/// Id de la configuration à lire
+			/// </summary>
 			public string id;
+			/// <summary>
+			/// Permet de définir si la fênetre apparait au dessus de tout
+			/// </summary>
 			public int auDessus;
+			/// <summary>
+			/// Valeur du bouton d'ajout 1
+			/// </summary>
 			public string valeurBouton1;
+			/// <summary>
+			/// Texte du bouton d'ajout 1
+			/// </summary>
 			public string texteBouton1;
+			/// <summary>
+			/// Valeur du bouton d'ajout 2
+			/// </summary>
 			public string valeurBouton2;
+			/// <summary>
+			/// Texte du bouton d'ajout 2
+			/// </summary>
 			public string texteBouton2;
+			/// <summary>
+			/// Valeur du bouton d'ajout 3
+			/// </summary>
 			public string valeurBouton3;
+			/// <summary>
+			/// Texte du bouton d'ajout 3
+			/// </summary>
 			public string texteBouton3;
+			/// <summary>
+			/// Texte de description des boutons d'ajout de temps
+			/// </summary>
 			public string texteBoutons;
+			/// <summary>
+			/// Texte de description du bouton annuler
+			/// </summary>
 			public string texteAnnuler;
 		}
 		private XmlDocument configuration;
-		
-		public static bool messageOuvert = false;
+		/// <summary>
+		/// Indique l'heure de fermeture
+		/// </summary>
 		public static DateTime heureFermeture;
+		/// <summary>
+		/// Indique le temps ajouté à l'heure de fermeture en ...
+		/// </summary>
 		public static int tempsRajouter = 0;
+		/// <summary>
+		/// Indique si le formulaire est maximisé
+		/// </summary>
 		public static bool formEstAffiche = true;
+		/// <summary>
+		/// Indique la valeur en unité de temps pour le bouton d'ajout 1
+		/// </summary>
 		public static int tempsBtn1;
+		/// <summary>
+		/// Indique la valeur en unité de temps pour le bouton d'ajout 2
+		/// </summary>
 		public static int tempsBtn2;
+		/// <summary>
+		/// Indique la valeur en unité de temps pour le bouton d'ajout 3
+		/// </summary>
 		public static int tempsBtn3;
+		/// <summary>
+		/// Indique le texte du bouton de temps 1
+		/// </summary>
 		public static string textBtn1;
+		/// <summary>
+		/// Indique le texte du bouton de temps 2
+		/// </summary>
 		public static string textBtn2;
+		/// <summary>
+		/// Indique le texte du bouton de temps 3
+		/// </summary>
 		public static string textBtn3;
+		/// <summary>
+		/// Indique s'il faut fermer l'ordinateur à la fin du décompte
+		/// </summary>
 		public static bool fermer = false;
-		Timer timerFermeture;
+		/// <summary>
+		/// Instance du compteur pour la fermeture
+		/// </summary>
+		private Timer timerFermeture;
+		/// <summary>
+		/// Liste des paramètres configurables depuis le fichiers XML
+		/// </summary>
 		public DesParametres listeParametres;
 		
+		/// <summary>
+		/// Constructeur du formulaire principal
+		/// </summary>
+		/// <param name="Args"></param>
 		public frmFermeture(string[] Args)
 		{
 			InitializeComponent();
@@ -134,6 +226,7 @@ namespace FermeturePC
 			}
 			catch(Exception e)
 			{
+				Exception erreur = e;
 				return false;
 			}
 			return true;
@@ -186,6 +279,7 @@ namespace FermeturePC
 			}
 			catch(Exception e)
 			{
+				Exception erreur = e;
 				return false;
 			}
 			if(listeParametres.titre == "") { return false; }

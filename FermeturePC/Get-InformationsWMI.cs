@@ -22,12 +22,33 @@ namespace FermeturePC
 	/// </summary>
 	public struct ObjInfosOrdinateur
 	{
+		/// <summary>
+		/// Nom de l'ordinateur ou localhost
+		/// </summary>
 		public string nom;
+		/// <summary>
+		/// Adresse IP
+		/// </summary>
 		public string ip;
+		/// <summary>
+		/// Date et heure du dernier démarrage
+		/// </summary>
 		public string DernierDemarrage;
+		/// <summary>
+		/// Description du ou des processeurs
+		/// </summary>
 		public string processeur;
+		/// <summary>
+		/// Mémoire physique totale
+		/// </summary>
 		public string memoireRam;
+		/// <summary>
+		/// Modèle
+		/// </summary>
 		public string modele;
+		/// <summary>
+		/// Manufacturier
+		/// </summary>
 		public string fabricant;
 	}
 	/// <summary>
@@ -35,6 +56,9 @@ namespace FermeturePC
 	/// </summary>
 	public class Get_InformationsWMI
 	{
+		/// <summary>
+		/// Constructeur
+		/// </summary>
 		public Get_InformationsWMI()
 		{
 		}
@@ -152,14 +176,14 @@ namespace FermeturePC
 		/// </summary>
 		/// <param name="dateWMI"></param>
 		/// <returns></returns>
-		DateTime convertirWmiDate(string dateWMi)
+		DateTime convertirWmiDate(string dateWMI)
 		{
 			DateTime tmp = DateTime.MinValue;
 			try
 			{
-		    	if(dateWMi != null && dateWMi.IndexOf('.') != -1)
+		    	if(dateWMI != null && dateWMI.IndexOf('.') != -1)
 			    {
-			        string nouvelleDate = dateWMi.Substring(0, dateWMi.IndexOf('.') + 4);
+			        string nouvelleDate = dateWMI.Substring(0, dateWMI.IndexOf('.') + 4);
 			        if(nouvelleDate.Length == 18)
 			        {
 			            int y = Convert.ToInt32(nouvelleDate.Substring(0, 4));

@@ -12,19 +12,44 @@ using System.Windows.Forms;
 
 namespace FermeturePC
 {
-	// Structure qui définit les différents états de l'ordinateur
+	/// <summary>
+	/// Structure qui définit les différents états de l'ordinateur
+	/// </summary>
 	public enum UnEtatOrdinateur
 	{	
+		/// <summary>
+		/// enVeille : l'ordinateur est en veille
+		/// </summary>
 		enVeille,
+		/// <summary>
+		/// L'ordinateur est verrouillé
+		/// </summary>
 		verrouille,
+		/// <summary>
+		/// Un session console est ouverte
+		/// </summary>
 		uneSessionOuverte,
+		/// <summary>
+		/// L'ordinateur est fermé
+		/// </summary>
 		fermer
 	}
-	// Structure qui définit les connexions utilisateurs
+	/// <summary>
+	/// Structure qui définit les connexions utilisateurs
+	/// </summary>
 	public enum UnEtatUtilisateur
 	{
-		utilisateurConnecte,
+		/// <summary>
+		/// Un ou plusieur utilisateurs consoles sont connectés
+		/// </summary>
+		utilisateursConnectes,
+		/// <summary>
+		/// Aucun utilisateur n'est connecté
+		/// </summary>
 		aucunUtilisateur,
+		/// <summary>
+		/// Un ou plusieur utilisateurs terminals sont connectés
+		/// </summary>
 		utilisateurDistant
 	}
 	/// <summary>
@@ -52,7 +77,7 @@ namespace FermeturePC
 		/// <returns></returns>
 		public static UnEtatUtilisateur EtatUtilisateur()
 		{
-			return UnEtatUtilisateur.utilisateurConnecte;
+			return UnEtatUtilisateur.utilisateursConnectes;
 		}
 		/// <summary>
 		/// Ferme l'ordinateur
