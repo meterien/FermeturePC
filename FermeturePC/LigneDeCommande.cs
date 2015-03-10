@@ -15,7 +15,8 @@ namespace CommandLine.Utility
     /// <summary>
     /// Arguments class
     /// </summary>
-    public class Arguments{
+    public class Arguments
+    {
         // Variables
         private StringDictionary Parameters;
 
