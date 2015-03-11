@@ -186,7 +186,7 @@ namespace FermeturePC
 			// Titre de la fenêtre
 			Text = listeParametres.titre;
 			// Message de description
-			lblDescription.Text = listeParametres.description;
+			lblDesc.Text = listeParametres.description;
 			// Logo
 			ChargerLogo(listeParametres.logo);
 			// Valeurs et textes des boutons qui retardent la fermeture
@@ -199,9 +199,9 @@ namespace FermeturePC
 			// Définit si au dessus des autres fenêtre
 			if(listeParametres.auDessus.ToString() == "1") { this.TopMost = true; }
 			// Description des boutons d'ajout de temps
-			lblAjouterTemps.Text = listeParametres.texteBoutons;
+			gbAjouterTemps.Text = listeParametres.texteBoutons;
 			// Description du bouton <annuler la fermeture>
-			lblAnnulerFermeture.Text = listeParametres.texteAnnuler;
+			gbAnnuler.Text = listeParametres.texteAnnuler;
 			// Affichage du temps restant avant la fermeture
 			heureFermeture = DateTime.Now.AddSeconds(listeParametres.delaiMinimum);
 			timerFermeture = new Timer();
@@ -477,6 +477,14 @@ namespace FermeturePC
 		void LblAjouterTempsClick(object sender, EventArgs e)
 		{
 	
+		}
+		void LblDescriptionClick(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+		void PnlFormPaint(object sender, PaintEventArgs e)
+		{
+			throw new NotImplementedException();
 		}
 		
 	}

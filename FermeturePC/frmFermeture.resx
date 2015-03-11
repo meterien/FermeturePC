@@ -117,8 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblDescription.Text" xml:space="preserve">
-    <value>Pour économiser de l'énergie, cet ordinateur va être arrêté pour la nuit. Pour éviter tout désagrément, nous vous recommandons fortement de sauvegarder votre travail en cours.
-Merci de votre collaboration. </value>
-  </data>
 </root>

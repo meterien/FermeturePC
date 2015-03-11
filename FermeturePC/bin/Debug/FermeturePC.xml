@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FermeturePC</name>
+    </assembly>
+    <members>
+        <member name="T:FermeturePC.UnEtatOrdinateur">
+            <summary>
+            Structure qui définit les différents états de l'ordinateur
+            </summary>
+        </member>
+        <member name="F:FermeturePC.UnEtatOrdinateur.enVeille">
+            <summary>
+            enVeille : l'ordinateur est en veille
+            </summary>
+        </member>
+        <member name="F:FermeturePC.UnEtatOrdinateur.verrouille">
+            <summary>
+            L'ordinateur est verrouillé
+            </summary>
+        </member>
+        <member name="F:FermeturePC.UnEtatOrdinateur.uneSessionOuverte">
+            <summary>
+            Un session console est ouverte
+            </summary>
+        </member>
+        <member name="F:FermeturePC.UnEtatOrdinateur.fermer">
+            <summary>
+            L'ordinateur est fermé
+            </summary>
+        </member>
+        <member name="T:FermeturePC.UnEtatUtilisateur">
+            <summary>
+            Structure qui définit les connexions utilisateurs
+            </summary>
+        </member>
+        <member name="F:FermeturePC.UnEtatUtilisateur.utilisateursConnectes">
+            <summary>
+            Un ou plusieur utilisateurs consoles sont connectés
+            </summary>
+        </member>
+        <member name="F:FermeturePC.UnEtatUtilisateur.aucunUtilisateur">
+            <summary>
+            Aucun utilisateur n'est connecté
+            </summary>
+        </member>
+        <member name="F:FermeturePC.UnEtatUtilisateur.utilisateurDistant">
+            <summary>
+            Un ou plusieur utilisateurs terminals sont connectés
+            </summary>
+        </member>
+        <member name="T:FermeturePC.ControleurEtats">
+            <summary>
+            Description of ControleurEtats.
+            </summary>
+        </member>
+        <member name="M:FermeturePC.ControleurEtats.#ctor">
+            <summary>
+            Constructeur par défaut
+            </summary>
+        </member>
+        <member name="M:FermeturePC.ControleurEtats.EtatOrdinateur">
+            <summary>
+            Vérifier l'état de l'ordinateur(veille, ouvert, verrouillé, etc)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FermeturePC.ControleurEtats.EtatUtilisateur">
+            <summary>
+            Vérifier si un utilisateur est connecté
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FermeturePC.ControleurEtats.FermerOrdinateur(System.Boolean)">
+            <summary>
+            Ferme l'ordinateur
+            </summary>
+        </member>
+        <member name="M:FermeturePC.ControleurEtats.OpenInputDesktop(System.UInt32,System.Boolean,System.UInt32)">
+            <summary>
+            Opens the desktop that receives user input.
+            </summary>
+            <param name="dwFlags"></param>
+            <param name="fInherit"></param>
+            <param name="dwDesiredAccess"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FermeturePC.frmFermeture">
+            <summary>
+            Formulaire principal de l'application
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.heureFermeture">
+            <summary>
+            Indique l'heure de fermeture
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.tempsRajouter">
+            <summary>
+            Indique le temps ajouté à l'heure de fermeture en ...
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.formEstAffiche">
+            <summary>
+            Indique si le formulaire est maximisé
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.tempsBtn1">
+            <summary>
+            Indique la valeur en unité de temps pour le bouton d'ajout 1
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.tempsBtn2">
+            <summary>
+            Indique la valeur en unité de temps pour le bouton d'ajout 2
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.tempsBtn3">
+            <summary>
+            Indique la valeur en unité de temps pour le bouton d'ajout 3
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.textBtn1">
+            <summary>
+            Indique le texte du bouton de temps 1
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.textBtn2">
+            <summary>
+            Indique le texte du bouton de temps 2
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.textBtn3">
+            <summary>
+            Indique le texte du bouton de temps 3
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.fermer">
+            <summary>
+            Indique s'il faut fermer l'ordinateur à la fin du décompte
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.timerFermeture">
+            <summary>
+            Instance du compteur pour la fermeture
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.listeParametres">
+            <summary>
+            Liste des paramètres configurables depuis le fichiers XML
+            </summary>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.#ctor(System.String[])">
+            <summary>
+            Constructeur du formulaire principal
+            </summary>
+            <param name="Args"></param>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.ParametresParDefauts">
+            <summary>
+            Appliquer les valeurs par défauts des paramètres
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.ChargerParametres(System.String[])">
+            <summary>
+            Valide et charge les valeurs des paramètres
+            </summary>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.ChargerLogo(System.String)">
+            <summary>
+            Essaie de charger une image
+            </summary>
+            <param name="nomFichier"></param>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.BtnAnnulerClick(System.Object,System.EventArgs)">
+            <summary>
+            Ferme le programme en cliquant sur le bouton annuler
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.TimerFermetureTick(System.Object,System.EventArgs)">
+            <summary>
+            Timer d'exécution pour le décompte
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.BtnAjouter10Click(System.Object,System.EventArgs)">
+            <summary>
+            Bouton qui permet d'ajouter 10 minutes au délai de fermeture
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.BtnAjouter20Click(System.Object,System.EventArgs)">
+            <summary>
+            Bouton qui permet d'ajouter 20 minutes au délai de fermeture
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.BtnAjouter30Click(System.Object,System.EventArgs)">
+            <summary>
+            Bouton qui permet d'ajouter 30 minutes au délai de fermeture
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.GetInformationsSysteme">
+            <summary>
+            Affiche les informations de l'ordinateur dans le controle
+            </summary>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.cacherForm(System.Boolean)">
+            <summary>
+            Cacher la form en la positionnant en dehors de l'écran
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.components">
+            <summary>
+            Designer variable used to keep track of non-visual components.
+            </summary>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.Dispose(System.Boolean)">
+            <summary>
+            Disposes resources used by the form.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FermeturePC.frmFermeture.InitializeComponent">
+            <summary>
+            This method is required for Windows Forms designer support.
+            Do not change the method contents inside the source code editor. The Forms designer might
+            not be able to load this method if it was changed manually.
+            </summary>
+        </member>
+        <member name="T:FermeturePC.frmFermeture.DesParametres">
+            <summary>
+            Structure contenant les paramètres configurables depuis le fichiers XML
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.titre">
+            <summary>
+            Titre de la fenêtre
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.description">
+            <summary>
+            Message afficher au centre du formulaire
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.delaiMaximum">
+            <summary>
+            Délai maximal autorisé
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.delaiMinimum">
+            <summary>
+            Délai initial lors du lancement de l'application
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.delaiAvertissement">
+            <summary>
+            Délai où le formulaire sera maximisé
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.obligatoire">
+            <summary>
+            Force ou non la fermeture lorsque le fichier xml n'est pas lisible
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.fichierXML">
+            <summary>
+            Chemin duquel lire le fichier XML
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.id">
+            <summary>
+            Id de la configuration à lire
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.auDessus">
+            <summary>
+            Permet de définir si la fênetre apparait au dessus de tout
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.valeurBouton1">
+            <summary>
+            Valeur du bouton d'ajout 1
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.texteBouton1">
+            <summary>
+            Texte du bouton d'ajout 1
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.valeurBouton2">
+            <summary>
+            Valeur du bouton d'ajout 2
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.texteBouton2">
+            <summary>
+            Texte du bouton d'ajout 2
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.valeurBouton3">
+            <summary>
+            Valeur du bouton d'ajout 3
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.texteBouton3">
+            <summary>
+            Texte du bouton d'ajout 3
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.texteBoutons">
+            <summary>
+            Texte de description des boutons d'ajout de temps
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.texteAnnuler">
+            <summary>
+            Texte de description du bouton annuler
+            </summary>
+        </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.logo">
+            <summary>
+            Le logo à afficher sur le formulaire
+            </summary>
+        </member>
+        <member name="T:FermeturePC.ObjInfosOrdinateur">
+            <summary>
+            Structure qui permet de contenir les informations générales d'un ordinateur
+            </summary>
+        </member>
+        <member name="F:FermeturePC.ObjInfosOrdinateur.nom">
+            <summary>
+            Nom de l'ordinateur ou localhost
+            </summary>
+        </member>
+        <member name="F:FermeturePC.ObjInfosOrdinateur.ip">
+            <summary>
+            Adresse IP
+            </summary>
+        </member>
+        <member name="F:FermeturePC.ObjInfosOrdinateur.DernierDemarrage">
+            <summary>
+            Date et heure du dernier démarrage
+            </summary>
+        </member>
+        <member name="F:FermeturePC.ObjInfosOrdinateur.processeur">
+            <summary>
+            Description du ou des processeurs
+            </summary>
+        </member>
+        <member name="F:FermeturePC.ObjInfosOrdinateur.memoireRam">
+            <summary>
+            Mémoire physique totale
+            </summary>
+        </member>
+        <member name="F:FermeturePC.ObjInfosOrdinateur.modele">
+            <summary>
+            Modèle
+            </summary>
+        </member>
+        <member name="F:FermeturePC.ObjInfosOrdinateur.fabricant">
+            <summary>
+            Manufacturier
+            </summary>
+        </member>
+        <member name="T:FermeturePC.Get_InformationsWMI">
+            <summary>
+            Description of Get_InformationsWMI.
+            </summary>
+        </member>
+        <member name="M:FermeturePC.Get_InformationsWMI.#ctor">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:FermeturePC.Get_InformationsWMI.GetComputerName(System.String)">
+            <summary>
+            Retourne le nom de l'ordinateur en cours
+            </summary>
+            <param name="nomOrdinateur">Nom de l'ordinateur</param>
+            <returns></returns>
+        </member>
+        <member name="M:FermeturePC.Get_InformationsWMI.GetAdresseIP(System.String)">
+            <summary>
+            Obtient l'addresse IP de l'ordinateur passer en paramètre
+            </summary>
+            <param name="computerName">Nom de l'ordinateur que l'on veut récupérer l'addresse IP</param>
+        </member>
+        <member name="M:FermeturePC.Get_InformationsWMI.requeteWMI(System.Management.SelectQuery,System.String)">
+            <summary>
+            Exécute et retourne le résultat d'une requête wmi
+            </summary>
+            <param name="requete">String contenant la requête wmi</param>
+            <param name="nomOrdinateur">Nom de l'ordinateur duquel faire la requête</param>
+            <returns></returns>
+        </member>
+        <member name="M:FermeturePC.Get_InformationsWMI.GetDernierDemarrage(System.String)">
+            <summary>
+            Retourne la date et heure du dernier démarrage
+            </summary>
+            <param name="nomOrdinateur">Nom de l'ordinateur duquel retourner l'heure du dernier démarrage</param>
+            <returns></returns>
+        </member>
+        <member name="M:FermeturePC.Get_InformationsWMI.GetModele(System.String)">
+            <summary>
+            Retourne les informations du fabricant et du modèle de l'ordinateur
+            </summary>
+            <param name="nomOrdinateur">Nom de l'ordinateur duquel retourner le modèle</param>
+            <returns></returns>
+        </member>
+        <member name="M:FermeturePC.Get_InformationsWMI.convertirWmiDate(System.String)">
+            <summary>
+            Convertie une date CIM en une date normal
+            </summary>
+            <param name="dateWMI"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CommandLine.Utility.Arguments">
+            <summary>
+            Arguments class
+            </summary>
+        </member>
+        <member name="M:CommandLine.Utility.Arguments.#ctor(System.String[])">
+            <summary>
+            Constructeur
+            </summary>
+            <param name="Args"></param>
+        </member>
+        <member name="P:CommandLine.Utility.Arguments.Item(System.String)">
+            <summary>
+            Retrieve a parameter value if it exists 
+            (overriding C# indexer property)
+            </summary>
+        </member>
+        <member name="T:FermeturePC.Program">
+            <summary>
+            Class with program entry point.
+            </summary>
+        </member>
+        <member name="M:FermeturePC.Program.Main(System.String[])">
+            <summary>
+            Program entry point.
+            </summary>
+        </member>
+    </members>
+</doc>
