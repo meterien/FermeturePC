@@ -9,6 +9,7 @@
 using System;
 using System.Management;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace FermeturePC
 {
@@ -69,6 +70,11 @@ namespace FermeturePC
 		/// <returns></returns>
 		public static UnEtatOrdinateur EtatOrdinateur()
 		{
+			var handle = OpenInputDesktop(0, false, 0);
+      		if(handle == null)
+      		{
+      			return UnEtatOrdinateur.verrouille;
+      		}
 			return UnEtatOrdinateur.uneSessionOuverte;
 		}
 		/// <summary>
@@ -105,5 +111,14 @@ namespace FermeturePC
 				// MessageBox.Show("Fonction : FermerOrdinateur");
 			}
 		}
+		/// <summary>
+		/// Opens the desktop that receives user input.
+		/// </summary>
+		/// <param name="dwFlags"></param>
+		/// <param name="fInherit"></param>
+		/// <param name="dwDesiredAccess"></param>
+		/// <returns></returns>
+		[DllImport("user32.dll", SetLastError = true)]
+		public static extern IntPtr OpenInputDesktop(uint dwFlags, bool fInherit, uint dwDesiredAccess);
 	}
 }

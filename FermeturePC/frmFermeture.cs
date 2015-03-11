@@ -168,6 +168,11 @@ namespace FermeturePC
 		public frmFermeture(string[] Args)
 		{
 			InitializeComponent();
+			// Si la station est en veille, on ferme
+			
+			// Si la station est verrouilé, on ferme
+			
+			// Chargement des paramètres
 			bool valeurDefaut = ParametresParDefauts();
 			bool configOK = ChargerParametres(Args);
 			if(valeurDefaut && configOK) // Si le chargement de la configuration s'est bien passé...
@@ -223,13 +228,13 @@ namespace FermeturePC
 				listeParametres.id = "0001";
 				listeParametres.auDessus = 1;
 				listeParametres.valeurBouton1 = "10";
-				listeParametres.texteBouton1 = "10 secondes";
+				listeParametres.texteBouton1 = "Travailler 10 secondes";
 				listeParametres.valeurBouton2 = "20";
-				listeParametres.texteBouton2 = "20 secondes";
+				listeParametres.texteBouton2 = "Travailler 20 secondes";
 				listeParametres.valeurBouton3 = "30";
-				listeParametres.texteBouton3 = "30 secondes";
-				listeParametres.texteBoutons = "Ajouter du temps pour retarder l'arrêt";
-				listeParametres.texteAnnuler = "Annuler la fermeture et retourner au bureau";
+				listeParametres.texteBouton3 = "Travailler 30 secondes";
+				listeParametres.texteBoutons = "";
+				listeParametres.texteAnnuler = "";
 				listeParametres.logo = "Logo.png";
 			}
 			catch(Exception e)
@@ -303,6 +308,7 @@ namespace FermeturePC
 		    {
 		        Bitmap unLogo = (Bitmap) Image.FromFile(nomFichier, true);
 		        this.pbLogo.BackgroundImage = unLogo;
+		        this.pbLogo.BackgroundImageLayout = ImageLayout.Stretch;
 		    }
 		    catch(System.IO.FileNotFoundException)
 		    {
@@ -463,6 +469,14 @@ namespace FermeturePC
 				this.Refresh();
 				formEstAffiche = true;
 			}
+		}
+		void FrmFermetureLoad(object sender, EventArgs e)
+		{
+	
+		}
+		void LblAjouterTempsClick(object sender, EventArgs e)
+		{
+	
 		}
 		
 	}
