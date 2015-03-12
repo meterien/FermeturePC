@@ -44,14 +44,11 @@ namespace FermeturePC
 			this.btnAjouter10 = new System.Windows.Forms.Button();
 			this.pbLogo = new System.Windows.Forms.PictureBox();
 			this.lblDesc = new System.Windows.Forms.Label();
-			this.gbAjouterTemps = new System.Windows.Forms.GroupBox();
-			this.gbAnnuler = new System.Windows.Forms.GroupBox();
-			this.gbFermeture = new System.Windows.Forms.GroupBox();
 			this.pnlForm = new System.Windows.Forms.Panel();
+			this.lblAnnulerDesc = new System.Windows.Forms.Label();
+			this.lblBoutonsDesc = new System.Windows.Forms.Label();
+			this.lblTitreDesc = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-			this.gbAjouterTemps.SuspendLayout();
-			this.gbAnnuler.SuspendLayout();
-			this.gbFermeture.SuspendLayout();
 			this.pnlForm.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -93,6 +90,7 @@ namespace FermeturePC
 			// 
 			// pbLogo
 			// 
+			this.pbLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			resources.ApplyResources(this.pbLogo, "pbLogo");
 			this.pbLogo.Name = "pbLogo";
 			this.pbLogo.TabStop = false;
@@ -102,49 +100,42 @@ namespace FermeturePC
 			resources.ApplyResources(this.lblDesc, "lblDesc");
 			this.lblDesc.Name = "lblDesc";
 			// 
-			// gbAjouterTemps
-			// 
-			resources.ApplyResources(this.gbAjouterTemps, "gbAjouterTemps");
-			this.gbAjouterTemps.BackColor = System.Drawing.Color.DodgerBlue;
-			this.gbAjouterTemps.Controls.Add(this.btnAjouter10);
-			this.gbAjouterTemps.Controls.Add(this.btnAjouter30);
-			this.gbAjouterTemps.Controls.Add(this.btnAjouter20);
-			this.gbAjouterTemps.Name = "gbAjouterTemps";
-			this.gbAjouterTemps.TabStop = false;
-			// 
-			// gbAnnuler
-			// 
-			resources.ApplyResources(this.gbAnnuler, "gbAnnuler");
-			this.gbAnnuler.BackColor = System.Drawing.Color.DodgerBlue;
-			this.gbAnnuler.Controls.Add(this.btnAnnuler);
-			this.gbAnnuler.Name = "gbAnnuler";
-			this.gbAnnuler.TabStop = false;
-			// 
-			// gbFermeture
-			// 
-			this.gbFermeture.BackColor = System.Drawing.Color.DodgerBlue;
-			this.gbFermeture.Controls.Add(this.lblDesc);
-			this.gbFermeture.Controls.Add(this.lblTempsRestant);
-			this.gbFermeture.Controls.Add(this.pbLogo);
-			resources.ApplyResources(this.gbFermeture, "gbFermeture");
-			this.gbFermeture.Name = "gbFermeture";
-			this.gbFermeture.TabStop = false;
-			// 
 			// pnlForm
 			// 
-			this.pnlForm.BackColor = System.Drawing.SystemColors.ControlLightLight;
-			this.pnlForm.Controls.Add(this.gbFermeture);
-			this.pnlForm.Controls.Add(this.gbAjouterTemps);
-			this.pnlForm.Controls.Add(this.gbAnnuler);
+			this.pnlForm.BackColor = System.Drawing.Color.DodgerBlue;
+			this.pnlForm.Controls.Add(this.lblAnnulerDesc);
+			this.pnlForm.Controls.Add(this.lblBoutonsDesc);
+			this.pnlForm.Controls.Add(this.lblTitreDesc);
+			this.pnlForm.Controls.Add(this.btnAnnuler);
+			this.pnlForm.Controls.Add(this.btnAjouter10);
+			this.pnlForm.Controls.Add(this.btnAjouter20);
+			this.pnlForm.Controls.Add(this.pbLogo);
+			this.pnlForm.Controls.Add(this.btnAjouter30);
+			this.pnlForm.Controls.Add(this.lblDesc);
+			this.pnlForm.Controls.Add(this.lblTempsRestant);
 			resources.ApplyResources(this.pnlForm, "pnlForm");
 			this.pnlForm.Name = "pnlForm";
-			this.pnlForm.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormPaint);
+			// 
+			// lblAnnulerDesc
+			// 
+			resources.ApplyResources(this.lblAnnulerDesc, "lblAnnulerDesc");
+			this.lblAnnulerDesc.Name = "lblAnnulerDesc";
+			// 
+			// lblBoutonsDesc
+			// 
+			resources.ApplyResources(this.lblBoutonsDesc, "lblBoutonsDesc");
+			this.lblBoutonsDesc.Name = "lblBoutonsDesc";
+			// 
+			// lblTitreDesc
+			// 
+			resources.ApplyResources(this.lblTitreDesc, "lblTitreDesc");
+			this.lblTitreDesc.Name = "lblTitreDesc";
 			// 
 			// frmFermeture
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.ControlLight;
+			this.BackColor = System.Drawing.Color.DodgerBlue;
 			this.ControlBox = false;
 			this.Controls.Add(this.pnlForm);
 			this.ForeColor = System.Drawing.Color.Black;
@@ -152,23 +143,21 @@ namespace FermeturePC
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "frmFermeture";
+			this.Opacity = 0.98D;
 			this.ShowIcon = false;
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.Load += new System.EventHandler(this.FrmFermetureLoad);
 			((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-			this.gbAjouterTemps.ResumeLayout(false);
-			this.gbAnnuler.ResumeLayout(false);
-			this.gbFermeture.ResumeLayout(false);
 			this.pnlForm.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
+		private System.Windows.Forms.Label lblAnnulerDesc;
+		private System.Windows.Forms.Label lblBoutonsDesc;
+		private System.Windows.Forms.Label lblTitreDesc;
 		private System.Windows.Forms.Panel pnlForm;
-		private System.Windows.Forms.GroupBox gbFermeture;
-		private System.Windows.Forms.GroupBox gbAnnuler;
 		private System.Windows.Forms.Label lblDesc;
-		private System.Windows.Forms.GroupBox gbAjouterTemps;
 		private System.Windows.Forms.Label lblTempsRestant;
 		private System.Windows.Forms.Button btnAnnuler;
 		private System.Windows.Forms.Button btnAjouter10;

@@ -122,7 +122,7 @@
     <value>Arial, 14.25pt</value>
   </data>
   <data name="btnAjouter30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>331, 25</value>
+    <value>328, 189</value>
   </data>
   <data name="btnAjouter30.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 35</value>
@@ -141,16 +141,16 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnAjouter30.Parent" xml:space="preserve">
-    <value>gbAjouterTemps</value>
+    <value>pnlForm</value>
   </data>
   <data name="&gt;&gt;btnAjouter30.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
   <data name="btnAjouter20.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 14.25pt</value>
   </data>
   <data name="btnAjouter20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 25</value>
+    <value>181, 189</value>
   </data>
   <data name="btnAjouter20.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 35</value>
@@ -168,10 +168,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnAjouter20.Parent" xml:space="preserve">
-    <value>gbAjouterTemps</value>
+    <value>pnlForm</value>
   </data>
   <data name="&gt;&gt;btnAjouter20.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnAnnuler.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
@@ -181,7 +181,7 @@
     <value>Arial, 14.25pt</value>
   </data>
   <data name="btnAnnuler.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 23</value>
+    <value>3, 255</value>
   </data>
   <data name="btnAnnuler.Size" type="System.Drawing.Size, System.Drawing">
     <value>484, 34</value>
@@ -199,16 +199,16 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnAnnuler.Parent" xml:space="preserve">
-    <value>gbAnnuler</value>
+    <value>pnlForm</value>
   </data>
   <data name="&gt;&gt;btnAnnuler.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="lblTempsRestant.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 36pt, style=Bold</value>
   </data>
   <data name="lblTempsRestant.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 110</value>
+    <value>3, 105</value>
   </data>
   <data name="lblTempsRestant.Size" type="System.Drawing.Size, System.Drawing">
     <value>484, 61</value>
@@ -229,16 +229,16 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblTempsRestant.Parent" xml:space="preserve">
-    <value>gbFermeture</value>
+    <value>pnlForm</value>
   </data>
   <data name="&gt;&gt;lblTempsRestant.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>9</value>
   </data>
   <data name="btnAjouter10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 14.25pt</value>
   </data>
   <data name="btnAjouter10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 25</value>
+    <value>3, 189</value>
   </data>
   <data name="btnAjouter10.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 35</value>
@@ -256,16 +256,16 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnAjouter10.Parent" xml:space="preserve">
-    <value>gbAjouterTemps</value>
+    <value>pnlForm</value>
   </data>
   <data name="&gt;&gt;btnAjouter10.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="pbLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 23</value>
+    <value>379, 3</value>
   </data>
   <data name="pbLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 84</value>
+    <value>108, 89</value>
   </data>
   <data name="pbLogo.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -277,16 +277,16 @@
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pbLogo.Parent" xml:space="preserve">
-    <value>gbFermeture</value>
+    <value>pnlForm</value>
   </data>
   <data name="&gt;&gt;pbLogo.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="lblDesc.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
   </data>
   <data name="lblDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 25</value>
+    <value>3, 23</value>
   </data>
   <data name="lblDesc.Size" type="System.Drawing.Size, System.Drawing">
     <value>386, 82</value>
@@ -307,103 +307,97 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblDesc.Parent" xml:space="preserve">
-    <value>gbFermeture</value>
+    <value>pnlForm</value>
   </data>
   <data name="&gt;&gt;lblDesc.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>8</value>
   </data>
-  <data name="gbAjouterTemps.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="gbAjouterTemps.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblAnnulerDesc.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 14.25pt, style=Bold</value>
   </data>
-  <data name="gbAjouterTemps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 183</value>
+  <data name="lblAnnulerDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 229</value>
   </data>
-  <data name="gbAjouterTemps.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 66</value>
+  <data name="lblAnnulerDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 23</value>
   </data>
-  <data name="gbAjouterTemps.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="gbAjouterTemps.Text" xml:space="preserve">
-    <value>Pour continuer d'utiliser l'ordinateur</value>
-  </data>
-  <data name="&gt;&gt;gbAjouterTemps.Name" xml:space="preserve">
-    <value>gbAjouterTemps</value>
-  </data>
-  <data name="&gt;&gt;gbAjouterTemps.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbAjouterTemps.Parent" xml:space="preserve">
-    <value>pnlForm</value>
-  </data>
-  <data name="&gt;&gt;gbAjouterTemps.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gbAnnuler.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="gbAnnuler.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 14.25pt, style=Bold</value>
-  </data>
-  <data name="gbAnnuler.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 255</value>
-  </data>
-  <data name="gbAnnuler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 63</value>
-  </data>
-  <data name="gbAnnuler.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblAnnulerDesc.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="gbAnnuler.Text" xml:space="preserve">
+  <data name="lblAnnulerDesc.Text" xml:space="preserve">
     <value>Pour annuler la fermeture automatique</value>
   </data>
-  <data name="&gt;&gt;gbAnnuler.Name" xml:space="preserve">
-    <value>gbAnnuler</value>
+  <data name="&gt;&gt;lblAnnulerDesc.Name" xml:space="preserve">
+    <value>lblAnnulerDesc</value>
   </data>
-  <data name="&gt;&gt;gbAnnuler.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblAnnulerDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gbAnnuler.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblAnnulerDesc.Parent" xml:space="preserve">
     <value>pnlForm</value>
   </data>
-  <data name="&gt;&gt;gbAnnuler.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;lblAnnulerDesc.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="gbFermeture.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblBoutonsDesc.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 14.25pt, style=Bold</value>
   </data>
-  <data name="gbFermeture.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="lblBoutonsDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 166</value>
   </data>
-  <data name="gbFermeture.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 174</value>
+  <data name="lblBoutonsDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 23</value>
   </data>
-  <data name="gbFermeture.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="lblBoutonsDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="gbFermeture.Text" xml:space="preserve">
-    <value>Fermeture automatique des ordinateurs</value>
+  <data name="lblBoutonsDesc.Text" xml:space="preserve">
+    <value>Pour continuer d'utiliser l'ordinateur</value>
   </data>
-  <data name="&gt;&gt;gbFermeture.Name" xml:space="preserve">
-    <value>gbFermeture</value>
+  <data name="&gt;&gt;lblBoutonsDesc.Name" xml:space="preserve">
+    <value>lblBoutonsDesc</value>
   </data>
-  <data name="&gt;&gt;gbFermeture.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblBoutonsDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gbFermeture.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblBoutonsDesc.Parent" xml:space="preserve">
     <value>pnlForm</value>
   </data>
-  <data name="&gt;&gt;gbFermeture.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;lblBoutonsDesc.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblTitreDesc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lblTitreDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="lblTitreDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 23</value>
+  </data>
+  <data name="lblTitreDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblTitreDesc.Text" xml:space="preserve">
+    <value>Fermeture automatique de l'ordinateur</value>
+  </data>
+  <data name="&gt;&gt;lblTitreDesc.Name" xml:space="preserve">
+    <value>lblTitreDesc</value>
+  </data>
+  <data name="&gt;&gt;lblTitreDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTitreDesc.Parent" xml:space="preserve">
+    <value>pnlForm</value>
+  </data>
+  <data name="&gt;&gt;lblTitreDesc.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="pnlForm.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
   <data name="pnlForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>502, 321</value>
+    <value>490, 293</value>
   </data>
   <data name="pnlForm.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -427,7 +421,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>526, 345</value>
+    <value>512, 314</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
