@@ -331,6 +331,11 @@
             Le logo à afficher sur le formulaire
             </summary>
         </member>
+        <member name="F:FermeturePC.frmFermeture.DesParametres.ForcerFermetureSiVerrouille">
+            <summary>
+            Permet de forcer ou non la fermeture lorsqu'une session est verrouillé
+            </summary>
+        </member>
         <member name="T:FermeturePC.ObjInfosOrdinateur">
             <summary>
             Structure qui permet de contenir les informations générales d'un ordinateur

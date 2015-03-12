@@ -6,7 +6,6 @@
  * 
  * 
  * 
- * TODO Ajout d'une option pour force l'arret lorsqu'il est impossible de lire le fichier de configuration
  * TODO Tester avec une mauvaise ligne de commande
  * TODO Tester avec un mauvais fichier de configuration
  * 
@@ -73,7 +72,7 @@ namespace FermeturePC
 			/// <summary>
 			/// Permet de définir si la fênetre apparait au dessus de tout
 			/// </summary>
-			public int auDessus;
+			public bool auDessus;
 			/// <summary>
 			/// Valeur du bouton d'ajout 1
 			/// </summary>
@@ -110,6 +109,10 @@ namespace FermeturePC
 			/// Le logo à afficher sur le formulaire
 			/// </summary>
 			public string logo;
+			/// <summary>
+			/// Permet de forcer ou non la fermeture lorsqu'une session est verrouillé
+			/// </summary>
+			public bool ForcerFermetureSiVerrouille;
 		}
 		private XmlDocument configuration;
 		/// <summary>
@@ -168,24 +171,25 @@ namespace FermeturePC
 		public frmFermeture(string[] Args)
 		{
 			InitializeComponent();
-			// Si la station est en veille, on ferme
-			
-			// Si la station est verrouilé, on ferme
-			
 			// Chargement des paramètres
 			bool valeurDefaut = ParametresParDefauts();
 			bool configOK = ChargerParametres(Args);
-			if(valeurDefaut && configOK) // Si le chargement de la configuration s'est bien passé...
+			if(valeurDefaut || configOK) // Si le chargement de la configuration s'est bien passé...
 			{
 				fermer = true;
+				// Si le poste est verrouillé && on ne force pas la fermeture
+				if(ControleurEtats.EtatOrdinateur() == UnEtatOrdinateur.verrouille && listeParametres.ForcerFermetureSiVerrouille == false)
+				{
+					//on ne ferme pas l'ordinateur
+					fermer = false;
+				}
 			}
-			else // Sinon, ne ferme pas l'ordinateur
+			else // Sinon, on ne ferme pas l'ordinateur
 			{
 				fermer = false;
 			}
-			
-			// Titre de la fenêtre
-			//Text = listeParametres.titre;
+			// Titre de la fenêtre (Ajouter pour avoir une barre de titre visible)
+			// Text = listeParametres.titre;
 			// Message de description
 			lblDesc.Text = listeParametres.description;
 			// Logo
@@ -227,7 +231,7 @@ namespace FermeturePC
 				listeParametres.obligatoire = true;
 				listeParametres.fichierXML = "Config.xml";
 				listeParametres.id = "0001";
-				listeParametres.auDessus = 1;
+				listeParametres.auDessus = true;
 				listeParametres.valeurBouton1 = "10";
 				listeParametres.texteBouton1 = "10 secondes";
 				listeParametres.valeurBouton2 = "20";
@@ -237,6 +241,7 @@ namespace FermeturePC
 				listeParametres.texteBoutons = "Pour continuer d'utiliser l'ordinateur";
 				listeParametres.texteAnnuler = "Pour annuler la fermeture automatique";
 				listeParametres.logo = "Logo.png";
+				listeParametres.ForcerFermetureSiVerrouille = false;
 			}
 			catch(Exception e)
 			{
@@ -281,8 +286,9 @@ namespace FermeturePC
 							if(param["TexteBouton3"].InnerText != null) { listeParametres.texteBouton3 = param["TexteBouton3"].InnerText; }
 							if(param["DescriptionBoutons"].InnerText != null) { listeParametres.texteBoutons = param["DescriptionBoutons"].InnerText; }
 							if(param["DescriptionAnnuler"].InnerText != null) { listeParametres.texteAnnuler = param["DescriptionAnnuler"].InnerText; }
-							if(param["AuDessusDeTout"].InnerText != null) { listeParametres.auDessus = Convert.ToInt32(param["AuDessusDeTout"].InnerText); }
+							if(param["AuDessusDeTout"].InnerText != null) { listeParametres.auDessus = Convert.ToBoolean(param["AuDessusDeTout"].InnerText); }
 							if(param["Logo"].InnerText != null && File.Exists(param["Logo"].InnerText)) { listeParametres.logo = param["Logo"].InnerText; }
+							if(param["ForcerFermetureSiVerrouille"].InnerText != null) { listeParametres.ForcerFermetureSiVerrouille = Convert.ToBoolean(param["ForcerFermetureSiVerrouille"].InnerText); }
 			        	}
 			        } 
 				}
