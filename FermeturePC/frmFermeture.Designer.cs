@@ -90,7 +90,6 @@ namespace FermeturePC
 			// 
 			// pbLogo
 			// 
-			this.pbLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			resources.ApplyResources(this.pbLogo, "pbLogo");
 			this.pbLogo.Name = "pbLogo";
 			this.pbLogo.TabStop = false;
