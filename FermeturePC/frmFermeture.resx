@@ -117,4 +117,325 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAjouter30.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14.25pt</value>
+  </data>
+  <data name="btnAjouter30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 25</value>
+  </data>
+  <data name="btnAjouter30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 35</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAjouter30.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnAjouter30.Text" xml:space="preserve">
+    <value>30 secondes</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter30.Name" xml:space="preserve">
+    <value>btnAjouter30</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter30.Parent" xml:space="preserve">
+    <value>gbAjouterTemps</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter30.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnAjouter20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14.25pt</value>
+  </data>
+  <data name="btnAjouter20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 25</value>
+  </data>
+  <data name="btnAjouter20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 35</value>
+  </data>
+  <data name="btnAjouter20.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnAjouter20.Text" xml:space="preserve">
+    <value>20 secondes</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter20.Name" xml:space="preserve">
+    <value>btnAjouter20</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter20.Parent" xml:space="preserve">
+    <value>gbAjouterTemps</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter20.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAnnuler.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btnAnnuler.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14.25pt</value>
+  </data>
+  <data name="btnAnnuler.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="btnAnnuler.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 34</value>
+  </data>
+  <data name="btnAnnuler.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnAnnuler.Text" xml:space="preserve">
+    <value>Annuler la fermeture</value>
+  </data>
+  <data name="&gt;&gt;btnAnnuler.Name" xml:space="preserve">
+    <value>btnAnnuler</value>
+  </data>
+  <data name="&gt;&gt;btnAnnuler.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAnnuler.Parent" xml:space="preserve">
+    <value>gbAnnuler</value>
+  </data>
+  <data name="&gt;&gt;btnAnnuler.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTempsRestant.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 36pt, style=Bold</value>
+  </data>
+  <data name="lblTempsRestant.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 110</value>
+  </data>
+  <data name="lblTempsRestant.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 61</value>
+  </data>
+  <data name="lblTempsRestant.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblTempsRestant.Text" xml:space="preserve">
+    <value>00:00:00</value>
+  </data>
+  <data name="lblTempsRestant.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTempsRestant.Name" xml:space="preserve">
+    <value>lblTempsRestant</value>
+  </data>
+  <data name="&gt;&gt;lblTempsRestant.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTempsRestant.Parent" xml:space="preserve">
+    <value>gbFermeture</value>
+  </data>
+  <data name="&gt;&gt;lblTempsRestant.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnAjouter10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14.25pt</value>
+  </data>
+  <data name="btnAjouter10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="btnAjouter10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 35</value>
+  </data>
+  <data name="btnAjouter10.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnAjouter10.Text" xml:space="preserve">
+    <value>10 secondes</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter10.Name" xml:space="preserve">
+    <value>btnAjouter10</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter10.Parent" xml:space="preserve">
+    <value>gbAjouterTemps</value>
+  </data>
+  <data name="&gt;&gt;btnAjouter10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pbLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 23</value>
+  </data>
+  <data name="pbLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 84</value>
+  </data>
+  <data name="pbLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.Name" xml:space="preserve">
+    <value>pbLogo</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.Parent" xml:space="preserve">
+    <value>gbFermeture</value>
+  </data>
+  <data name="&gt;&gt;pbLogo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblDesc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt</value>
+  </data>
+  <data name="lblDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="lblDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 82</value>
+  </data>
+  <data name="lblDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblDesc.Text" xml:space="preserve">
+    <value>Pour économiser de l'énergie, cet ordinateur va être arrêté pour la nuit. Pour éviter tout désagrément, nous vous recommandons fortement de sauvegarder votre travail en cours.</value>
+  </data>
+  <data name="lblDesc.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblDesc.Name" xml:space="preserve">
+    <value>lblDesc</value>
+  </data>
+  <data name="&gt;&gt;lblDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDesc.Parent" xml:space="preserve">
+    <value>gbFermeture</value>
+  </data>
+  <data name="&gt;&gt;lblDesc.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gbAjouterTemps.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="gbAjouterTemps.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14.25pt, style=Bold</value>
+  </data>
+  <data name="gbAjouterTemps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 183</value>
+  </data>
+  <data name="gbAjouterTemps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 66</value>
+  </data>
+  <data name="gbAjouterTemps.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="gbAjouterTemps.Text" xml:space="preserve">
+    <value>Pour continuer d'utiliser l'ordinateur</value>
+  </data>
+  <data name="&gt;&gt;gbAjouterTemps.Name" xml:space="preserve">
+    <value>gbAjouterTemps</value>
+  </data>
+  <data name="&gt;&gt;gbAjouterTemps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbAjouterTemps.Parent" xml:space="preserve">
+    <value>pnlForm</value>
+  </data>
+  <data name="&gt;&gt;gbAjouterTemps.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbAnnuler.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="gbAnnuler.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14.25pt, style=Bold</value>
+  </data>
+  <data name="gbAnnuler.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 255</value>
+  </data>
+  <data name="gbAnnuler.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 63</value>
+  </data>
+  <data name="gbAnnuler.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="gbAnnuler.Text" xml:space="preserve">
+    <value>Pour annuler la fermeture automatique</value>
+  </data>
+  <data name="&gt;&gt;gbAnnuler.Name" xml:space="preserve">
+    <value>gbAnnuler</value>
+  </data>
+  <data name="&gt;&gt;gbAnnuler.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbAnnuler.Parent" xml:space="preserve">
+    <value>pnlForm</value>
+  </data>
+  <data name="&gt;&gt;gbAnnuler.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gbFermeture.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14.25pt, style=Bold</value>
+  </data>
+  <data name="gbFermeture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="gbFermeture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 174</value>
+  </data>
+  <data name="gbFermeture.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="gbFermeture.Text" xml:space="preserve">
+    <value>Fermeture automatique des ordinateurs</value>
+  </data>
+  <data name="&gt;&gt;gbFermeture.Name" xml:space="preserve">
+    <value>gbFermeture</value>
+  </data>
+  <data name="&gt;&gt;gbFermeture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbFermeture.Parent" xml:space="preserve">
+    <value>pnlForm</value>
+  </data>
+  <data name="&gt;&gt;gbFermeture.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="pnlForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 321</value>
+  </data>
+  <data name="pnlForm.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;pnlForm.Name" xml:space="preserve">
+    <value>pnlForm</value>
+  </data>
+  <data name="&gt;&gt;pnlForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlForm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlForm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>526, 345</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmFermeture</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

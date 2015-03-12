@@ -183,8 +183,16 @@ namespace FermeturePC
 			{
 				fermer = false;
 			}
+			
+			
+			//
+			fermer = true;
+			//
+			
+			
+			
 			// Titre de la fenêtre
-			Text = listeParametres.titre;
+			//Text = listeParametres.titre;
 			// Message de description
 			lblDesc.Text = listeParametres.description;
 			// Logo
@@ -228,13 +236,13 @@ namespace FermeturePC
 				listeParametres.id = "0001";
 				listeParametres.auDessus = 1;
 				listeParametres.valeurBouton1 = "10";
-				listeParametres.texteBouton1 = "Travailler 10 secondes";
+				listeParametres.texteBouton1 = "10 secondes";
 				listeParametres.valeurBouton2 = "20";
-				listeParametres.texteBouton2 = "Travailler 20 secondes";
+				listeParametres.texteBouton2 = "20 secondes";
 				listeParametres.valeurBouton3 = "30";
-				listeParametres.texteBouton3 = "Travailler 30 secondes";
-				listeParametres.texteBoutons = "";
-				listeParametres.texteAnnuler = "";
+				listeParametres.texteBouton3 = "30 secondes";
+				listeParametres.texteBoutons = "Pour continuer d'utiliser l'ordinateur";
+				listeParametres.texteAnnuler = "Pour annuler la fermeture automatique";
 				listeParametres.logo = "Logo.png";
 			}
 			catch(Exception e)
@@ -484,8 +492,7 @@ namespace FermeturePC
 		}
 		void PnlFormPaint(object sender, PaintEventArgs e)
 		{
-			throw new NotImplementedException();
-		}
-		
+	
+		}		
 	}
 }
