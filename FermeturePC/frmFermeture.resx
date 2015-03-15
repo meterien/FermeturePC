@@ -118,59 +118,59 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnAjouter30.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnAjouter3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 14.25pt</value>
   </data>
-  <data name="btnAjouter30.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnAjouter3.Location" type="System.Drawing.Point, System.Drawing">
     <value>328, 189</value>
   </data>
-  <data name="btnAjouter30.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnAjouter3.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 35</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAjouter30.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnAjouter3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="btnAjouter30.Text" xml:space="preserve">
+  <data name="btnAjouter3.Text" xml:space="preserve">
     <value>30 secondes</value>
   </data>
-  <data name="&gt;&gt;btnAjouter30.Name" xml:space="preserve">
-    <value>btnAjouter30</value>
+  <data name="&gt;&gt;btnAjouter3.Name" xml:space="preserve">
+    <value>btnAjouter3</value>
   </data>
-  <data name="&gt;&gt;btnAjouter30.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnAjouter3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnAjouter30.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnAjouter3.Parent" xml:space="preserve">
     <value>pnlForm</value>
   </data>
-  <data name="&gt;&gt;btnAjouter30.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnAjouter3.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="btnAjouter20.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnAjouter2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 14.25pt</value>
   </data>
-  <data name="btnAjouter20.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnAjouter2.Location" type="System.Drawing.Point, System.Drawing">
     <value>181, 189</value>
   </data>
-  <data name="btnAjouter20.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnAjouter2.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 35</value>
   </data>
-  <data name="btnAjouter20.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnAjouter2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="btnAjouter20.Text" xml:space="preserve">
+  <data name="btnAjouter2.Text" xml:space="preserve">
     <value>20 secondes</value>
   </data>
-  <data name="&gt;&gt;btnAjouter20.Name" xml:space="preserve">
-    <value>btnAjouter20</value>
+  <data name="&gt;&gt;btnAjouter2.Name" xml:space="preserve">
+    <value>btnAjouter2</value>
   </data>
-  <data name="&gt;&gt;btnAjouter20.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnAjouter2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnAjouter20.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnAjouter2.Parent" xml:space="preserve">
     <value>pnlForm</value>
   </data>
-  <data name="&gt;&gt;btnAjouter20.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnAjouter2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
@@ -234,31 +234,31 @@
   <data name="&gt;&gt;lblTempsRestant.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="btnAjouter10.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnAjouter1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 14.25pt</value>
   </data>
-  <data name="btnAjouter10.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnAjouter1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 189</value>
   </data>
-  <data name="btnAjouter10.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnAjouter1.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 35</value>
   </data>
-  <data name="btnAjouter10.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnAjouter1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="btnAjouter10.Text" xml:space="preserve">
+  <data name="btnAjouter1.Text" xml:space="preserve">
     <value>10 secondes</value>
   </data>
-  <data name="&gt;&gt;btnAjouter10.Name" xml:space="preserve">
-    <value>btnAjouter10</value>
+  <data name="&gt;&gt;btnAjouter1.Name" xml:space="preserve">
+    <value>btnAjouter1</value>
   </data>
-  <data name="&gt;&gt;btnAjouter10.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnAjouter1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnAjouter10.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnAjouter1.Parent" xml:space="preserve">
     <value>pnlForm</value>
   </data>
-  <data name="&gt;&gt;btnAjouter10.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnAjouter1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="pbLogo.Location" type="System.Drawing.Point, System.Drawing">

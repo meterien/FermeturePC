@@ -35,7 +35,7 @@ namespace FermeturePC
 		/// <summary>
 		/// Structure contenant les paramètres configurables depuis le fichiers XML
 		/// </summary>
-		public struct DesParametres
+		private struct DesParametres
 		{
 			/// <summary>
 			/// Titre de la fenêtre
@@ -76,7 +76,7 @@ namespace FermeturePC
 			/// <summary>
 			/// Valeur du bouton d'ajout 1
 			/// </summary>
-			public string valeurBouton1;
+			public int valeurBouton1;
 			/// <summary>
 			/// Texte du bouton d'ajout 1
 			/// </summary>
@@ -84,7 +84,7 @@ namespace FermeturePC
 			/// <summary>
 			/// Valeur du bouton d'ajout 2
 			/// </summary>
-			public string valeurBouton2;
+			public int valeurBouton2;
 			/// <summary>
 			/// Texte du bouton d'ajout 2
 			/// </summary>
@@ -92,7 +92,7 @@ namespace FermeturePC
 			/// <summary>
 			/// Valeur du bouton d'ajout 3
 			/// </summary>
-			public string valeurBouton3;
+			public int valeurBouton3;
 			/// <summary>
 			/// Texte du bouton d'ajout 3
 			/// </summary>
@@ -118,43 +118,15 @@ namespace FermeturePC
 		/// <summary>
 		/// Indique l'heure de fermeture
 		/// </summary>
-		public static DateTime heureFermeture;
+		private static DateTime heureFermeture;
 		/// <summary>
 		/// Indique le temps ajouté à l'heure de fermeture en ...
 		/// </summary>
-		public static int tempsRajouter = 0;
-		/// <summary>
-		/// Indique si le formulaire est maximisé
-		/// </summary>
-		public static bool formEstAffiche = true;
-		/// <summary>
-		/// Indique la valeur en unité de temps pour le bouton d'ajout 1
-		/// </summary>
-		public static int tempsBtn1;
-		/// <summary>
-		/// Indique la valeur en unité de temps pour le bouton d'ajout 2
-		/// </summary>
-		public static int tempsBtn2;
-		/// <summary>
-		/// Indique la valeur en unité de temps pour le bouton d'ajout 3
-		/// </summary>
-		public static int tempsBtn3;
-		/// <summary>
-		/// Indique le texte du bouton de temps 1
-		/// </summary>
-		public static string textBtn1;
-		/// <summary>
-		/// Indique le texte du bouton de temps 2
-		/// </summary>
-		public static string textBtn2;
-		/// <summary>
-		/// Indique le texte du bouton de temps 3
-		/// </summary>
-		public static string textBtn3;
+		private static int tempsRajouter = 0;
 		/// <summary>
 		/// Indique s'il faut fermer l'ordinateur à la fin du décompte
 		/// </summary>
-		public static bool fermer = false;
+		private static bool fermer = false;
 		/// <summary>
 		/// Instance du compteur pour la fermeture
 		/// </summary>
@@ -162,7 +134,7 @@ namespace FermeturePC
 		/// <summary>
 		/// Liste des paramètres configurables depuis le fichiers XML
 		/// </summary>
-		public DesParametres listeParametres;
+		private DesParametres listeParametres;
 		
 		/// <summary>
 		/// Constructeur du formulaire principal
@@ -177,11 +149,10 @@ namespace FermeturePC
 			if(valeurDefaut || configOK) // Si le chargement de la configuration s'est bien passé...
 			{
 				fermer = true;
-				// Si le poste est verrouillé && on ne force pas la fermeture
-				if(ControleurEtats.EtatOrdinateur() == UnEtatOrdinateur.verrouille && listeParametres.ForcerFermetureSiVerrouille == false)
+				// Détermine l'action à prendre en cas de session verrouilé
+				if(ControleurEtats.EtatOrdinateur() == UnEtatOrdinateur.verrouille)
 				{
-					//on ne ferme pas l'ordinateur
-					fermer = false;
+					fermer = listeParametres.ForcerFermetureSiVerrouille;
 				}
 			}
 			else // Sinon, on ne ferme pas l'ordinateur
@@ -194,13 +165,10 @@ namespace FermeturePC
 			lblDesc.Text = listeParametres.description;
 			// Logo
 			ChargerLogo(listeParametres.logo);
-			// Valeurs et textes des boutons qui retardent la fermeture
-			tempsBtn1 = Convert.ToInt16(listeParametres.valeurBouton1);
-			btnAjouter10.Text = listeParametres.texteBouton1;
-			tempsBtn2 = Convert.ToInt16(listeParametres.valeurBouton2);
-			btnAjouter20.Text = listeParametres.texteBouton2;
-			tempsBtn3 = Convert.ToInt16(listeParametres.valeurBouton3);
-			btnAjouter30.Text = listeParametres.texteBouton3;
+			// textes des boutons qui retardent la fermeture
+			btnAjouter1.Text = listeParametres.texteBouton1;
+			btnAjouter2.Text = listeParametres.texteBouton2;
+			btnAjouter3.Text = listeParametres.texteBouton3;
 			// Définit si au dessus des autres fenêtre
 			if(listeParametres.auDessus.ToString() == "1") { this.TopMost = true; }
 			// Description des boutons d'ajout de temps
@@ -225,18 +193,18 @@ namespace FermeturePC
 				listeParametres = new DesParametres();
 				listeParametres.titre = "Fermeture des ordinateurs pédagogiques";
 				listeParametres.description = "Pour économiser de l'énergie, cet ordinateur va être arrêté pour la nuit. Pour éviter tout désagrément, nous vous recommandons fortement de sauvegarder votre travail en cours. Merci de votre collaboration.";
-				listeParametres.delaiMaximum = 99999;
+				listeParametres.delaiMaximum = 86400;
 				listeParametres.delaiMinimum = 60;
 				listeParametres.delaiAvertissement = 30;
 				listeParametres.obligatoire = true;
 				listeParametres.fichierXML = "Config.xml";
 				listeParametres.id = "0001";
 				listeParametres.auDessus = true;
-				listeParametres.valeurBouton1 = "10";
+				listeParametres.valeurBouton1 = 10;
 				listeParametres.texteBouton1 = "10 secondes";
-				listeParametres.valeurBouton2 = "20";
+				listeParametres.valeurBouton2 = 20;
 				listeParametres.texteBouton2 = "20 secondes";
-				listeParametres.valeurBouton3 = "30";
+				listeParametres.valeurBouton3 = 30;
 				listeParametres.texteBouton3 = "30 secondes";
 				listeParametres.texteBoutons = "Pour continuer d'utiliser l'ordinateur";
 				listeParametres.texteAnnuler = "Pour annuler la fermeture automatique";
@@ -278,11 +246,11 @@ namespace FermeturePC
 			        		if(param["DelaiDepart"].InnerText != null) { listeParametres.delaiMinimum = Convert.ToInt32(param["DelaiDepart"].InnerText); }
 			        		if(param["DelaiAvertissement"].InnerText != null) { listeParametres.delaiAvertissement = Convert.ToInt32(param["DelaiAvertissement"].InnerText); }
 			        		if(param["DelaiMaximum"].InnerText != null) { listeParametres.delaiMaximum = Convert.ToInt32(param["DelaiMaximum"].InnerText); }
-							if(param["ValeurBouton1"].InnerText != null) { listeParametres.valeurBouton1 = param["ValeurBouton1"].InnerText; }
+			        		if(param["ValeurBouton1"].InnerText != null) { listeParametres.valeurBouton1 = Convert.ToInt32(param["ValeurBouton1"].InnerText); }
 							if(param["TexteBouton1"].InnerText != null) { listeParametres.texteBouton1 = param["TexteBouton1"].InnerText; }
-							if(param["ValeurBouton2"].InnerText != null) { listeParametres.valeurBouton2 = param["ValeurBouton2"].InnerText; }
+							if(param["ValeurBouton2"].InnerText != null) { listeParametres.valeurBouton2 = Convert.ToInt32(param["ValeurBouton2"].InnerText); }
 							if(param["TexteBouton2"].InnerText != null) { listeParametres.texteBouton2 = param["TexteBouton2"].InnerText; }
-							if(param["ValeurBouton3"].InnerText != null) { listeParametres.valeurBouton3 = param["ValeurBouton3"].InnerText; }
+							if(param["ValeurBouton3"].InnerText != null) { listeParametres.valeurBouton3 = Convert.ToInt32(param["ValeurBouton3"].InnerText); }
 							if(param["TexteBouton3"].InnerText != null) { listeParametres.texteBouton3 = param["TexteBouton3"].InnerText; }
 							if(param["DescriptionBoutons"].InnerText != null) { listeParametres.texteBoutons = param["DescriptionBoutons"].InnerText; }
 							if(param["DescriptionAnnuler"].InnerText != null) { listeParametres.texteAnnuler = param["DescriptionAnnuler"].InnerText; }
@@ -349,7 +317,7 @@ namespace FermeturePC
 				this.TopMost = true;
 				pnlForm.Location = new Point(this.ClientSize.Width / 2 - pnlForm.Size.Width / 2, this.ClientSize.Height / 2 - pnlForm.Size.Height / 2);
 				pnlForm.Anchor = AnchorStyles.None;
-				cacherForm(false);
+				cacherFormulaire(false);
 			}
 			else
 			{
@@ -368,20 +336,21 @@ namespace FermeturePC
 			}
 		}
 		/// <summary>
-		/// Bouton qui permet d'ajouter 10 minutes au délai de fermeture
+		/// Bouton qui permet d'ajouter X secondes au délai de fermeture
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
-		void BtnAjouter10Click(object sender, EventArgs e)
+		void BtnAjouter1Click(object sender, EventArgs e)
 		{
 			int tmp = 0;
 			int sec = 600;
-			sec = (int)tempsBtn1;
+			//sec = (int)tempsBtn1;
+			sec = listeParametres.valeurBouton1;
 			if((tempsRajouter + sec) <= listeParametres.delaiMaximum)
 			{ 
 				tempsRajouter += sec;
 				heureFermeture = heureFermeture.AddSeconds(sec);
-				cacherForm(true);
+				cacherFormulaire(true);
 			}
 			else
 			{
@@ -391,20 +360,20 @@ namespace FermeturePC
 			}
 		}
 		/// <summary>
-		/// Bouton qui permet d'ajouter 20 minutes au délai de fermeture
+		/// Bouton qui permet d'ajouter X secondes au délai de fermeture
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
-		void BtnAjouter20Click(object sender, EventArgs e)
+		void BtnAjouter2Click(object sender, EventArgs e)
 		{
 			int tmp = 0;
 			int sec = 1200;
-			sec = (int)tempsBtn2;
+			sec = listeParametres.valeurBouton2;
 			if((tempsRajouter + sec) <= listeParametres.delaiMaximum)
 			{ 
 				tempsRajouter += sec;
 				heureFermeture = heureFermeture.AddSeconds(sec);
-				cacherForm(true);
+				cacherFormulaire(true);
 			}
 			else
 			{
@@ -414,20 +383,20 @@ namespace FermeturePC
 			}
 		}
 		/// <summary>
-		/// Bouton qui permet d'ajouter 30 minutes au délai de fermeture
+		/// Bouton qui permet d'ajouter X secondes au délai de fermeture
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
-		void BtnAjouter30Click(object sender, EventArgs e)
+		void BtnAjouter3Click(object sender, EventArgs e)
 		{
 			int tmp = 0;
 			int sec = 1800;
-			sec = (int)tempsBtn3;
+			sec = listeParametres.valeurBouton3;
 			if((tempsRajouter + sec) <= listeParametres.delaiMaximum)
 			{ 
 				tempsRajouter += sec;
 				heureFermeture = heureFermeture.AddSeconds(sec);
-				cacherForm(true);
+				cacherFormulaire(true);
 			}
 			else
 			{
@@ -437,49 +406,20 @@ namespace FermeturePC
 			}
 		}
 		/// <summary>
-		/// Affiche les informations de l'ordinateur dans le controle
+		/// Cacher le formualire en la positionnant en dehors de l'écran
 		/// </summary>
-		void GetInformationsSysteme()
-		{
-			/*lblInfoOrdinateur.Text += "Adresses IP: ";
-			List<string> listeIP = Get_InformationsWMI.GetAdresseIP("localhost");
-			if(listeIP != null)
-			{
-				foreach(string ip in listeIP)
-				{
-					lblInfoOrdinateur.Text += ip.ToString();
-					lblInfoOrdinateur.Text += " ";
-				}
-				lblInfoOrdinateur.Text += Environment.NewLine + "Nom: ";
-				lblInfoOrdinateur.Text += Get_InformationsWMI.GetComputerName("localhost") + Environment.NewLine;
-				ObjInfosOrdinateur infos = Get_InformationsWMI.GetModele("localhost");
-				lblInfoOrdinateur.Text += "Fabricant: " + infos.fabricant + Environment.NewLine;
-				lblInfoOrdinateur.Text += "Modèle: " + infos.modele + Environment.NewLine;
-				lblInfoOrdinateur.Text += "Dernier démarrage: " + convertirWmiDate(Get_InformationsWMI.GetDernierDemarrage("localhost"));
-			}*/
-		}
-
-		/// <summary>
-		/// Cacher la form en la positionnant en dehors de l'écran
-		/// </summary>
-		void cacherForm(bool invisible)
+		void cacherFormulaire(bool invisible)
 		{
 			if(invisible == true)
 			{
 				this.Location = new Point(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
 				this.Refresh();
-				formEstAffiche = false;
 			}
 			else
 			{
 				this.CenterToScreen();
 				this.Refresh();
-				formEstAffiche = true;
 			}
 		}
-		void FrmFermetureLoad(object sender, EventArgs e)
-		{
-	
-		}	
 	}
 }

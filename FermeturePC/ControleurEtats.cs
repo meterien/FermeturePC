@@ -53,6 +53,7 @@ namespace FermeturePC
 		/// </summary>
 		utilisateurDistant
 	}
+	
 	/// <summary>
 	/// Description of ControleurEtats.
 	/// </summary>
@@ -65,17 +66,17 @@ namespace FermeturePC
 		{
 		}
 		/// <summary>
-		/// Vérifier l'état de l'ordinateur(veille, ouvert, verrouillé, etc)
+		/// Vérifier l'état de l'ordinateur
 		/// </summary>
 		/// <returns></returns>
 		public static UnEtatOrdinateur EtatOrdinateur()
 		{
 			var handle = OpenInputDesktop(0, false, 0);
-      		if(handle == null)
-      		{
-      			return UnEtatOrdinateur.verrouille;
-      		}
-			return UnEtatOrdinateur.uneSessionOuverte;
+			if (handle != null)
+			{
+				return UnEtatOrdinateur.uneSessionOuverte;				
+			}
+      		return UnEtatOrdinateur.verrouille;
 		}
 		/// <summary>
 		/// Vérifier si un utilisateur est connecté
@@ -93,22 +94,16 @@ namespace FermeturePC
 			if(PasUnTest)
 			{
 				ManagementBaseObject mboShutdown = null;
-	            ManagementClass mcWin32 = new ManagementClass("Win32_OperatingSystem");
+	            var mcWin32 = new ManagementClass("Win32_OperatingSystem");
 	            mcWin32.Get();
-	            // You can't shutdown without security privileges
-	            mcWin32.Scope.Options.EnablePrivileges = true;
+	            mcWin32.Scope.Options.EnablePrivileges = true; // You can't shutdown without security privileges
 	            ManagementBaseObject mboShutdownParams = mcWin32.GetMethodParameters("Win32Shutdown");
-	            // Flag 1 means we want to shut down the system
-	            mboShutdownParams["Flags"] = "1";
+	            mboShutdownParams["Flags"] = "1"; // Flag 1 means we want to shut down the system
 	            mboShutdownParams["Reserved"] = "0";
 	            foreach (ManagementObject manObj in mcWin32.GetInstances())
 	            {
 	                mboShutdown = manObj.InvokeMethod("Win32Shutdown", mboShutdownParams, null);
 	            }
-			}
-			else
-			{
-				// MessageBox.Show("Fonction : FermerOrdinateur");
 			}
 		}
 		/// <summary>

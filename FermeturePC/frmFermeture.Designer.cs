@@ -37,11 +37,11 @@ namespace FermeturePC
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFermeture));
-			this.btnAjouter30 = new System.Windows.Forms.Button();
-			this.btnAjouter20 = new System.Windows.Forms.Button();
+			this.btnAjouter3 = new System.Windows.Forms.Button();
+			this.btnAjouter2 = new System.Windows.Forms.Button();
 			this.btnAnnuler = new System.Windows.Forms.Button();
 			this.lblTempsRestant = new System.Windows.Forms.Label();
-			this.btnAjouter10 = new System.Windows.Forms.Button();
+			this.btnAjouter1 = new System.Windows.Forms.Button();
 			this.pbLogo = new System.Windows.Forms.PictureBox();
 			this.lblDesc = new System.Windows.Forms.Label();
 			this.pnlForm = new System.Windows.Forms.Panel();
@@ -52,19 +52,19 @@ namespace FermeturePC
 			this.pnlForm.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// btnAjouter30
+			// btnAjouter3
 			// 
-			resources.ApplyResources(this.btnAjouter30, "btnAjouter30");
-			this.btnAjouter30.Name = "btnAjouter30";
-			this.btnAjouter30.UseVisualStyleBackColor = true;
-			this.btnAjouter30.Click += new System.EventHandler(this.BtnAjouter30Click);
+			resources.ApplyResources(this.btnAjouter3, "btnAjouter3");
+			this.btnAjouter3.Name = "btnAjouter3";
+			this.btnAjouter3.UseVisualStyleBackColor = true;
+			this.btnAjouter3.Click += new System.EventHandler(this.BtnAjouter3Click);
 			// 
-			// btnAjouter20
+			// btnAjouter2
 			// 
-			resources.ApplyResources(this.btnAjouter20, "btnAjouter20");
-			this.btnAjouter20.Name = "btnAjouter20";
-			this.btnAjouter20.UseVisualStyleBackColor = true;
-			this.btnAjouter20.Click += new System.EventHandler(this.BtnAjouter20Click);
+			resources.ApplyResources(this.btnAjouter2, "btnAjouter2");
+			this.btnAjouter2.Name = "btnAjouter2";
+			this.btnAjouter2.UseVisualStyleBackColor = true;
+			this.btnAjouter2.Click += new System.EventHandler(this.BtnAjouter2Click);
 			// 
 			// btnAnnuler
 			// 
@@ -81,12 +81,12 @@ namespace FermeturePC
 			this.lblTempsRestant.ForeColor = System.Drawing.Color.Red;
 			this.lblTempsRestant.Name = "lblTempsRestant";
 			// 
-			// btnAjouter10
+			// btnAjouter1
 			// 
-			resources.ApplyResources(this.btnAjouter10, "btnAjouter10");
-			this.btnAjouter10.Name = "btnAjouter10";
-			this.btnAjouter10.UseVisualStyleBackColor = true;
-			this.btnAjouter10.Click += new System.EventHandler(this.BtnAjouter10Click);
+			resources.ApplyResources(this.btnAjouter1, "btnAjouter1");
+			this.btnAjouter1.Name = "btnAjouter1";
+			this.btnAjouter1.UseVisualStyleBackColor = true;
+			this.btnAjouter1.Click += new System.EventHandler(this.BtnAjouter1Click);
 			// 
 			// pbLogo
 			// 
@@ -106,10 +106,10 @@ namespace FermeturePC
 			this.pnlForm.Controls.Add(this.lblBoutonsDesc);
 			this.pnlForm.Controls.Add(this.lblTitreDesc);
 			this.pnlForm.Controls.Add(this.btnAnnuler);
-			this.pnlForm.Controls.Add(this.btnAjouter10);
-			this.pnlForm.Controls.Add(this.btnAjouter20);
+			this.pnlForm.Controls.Add(this.btnAjouter1);
+			this.pnlForm.Controls.Add(this.btnAjouter2);
 			this.pnlForm.Controls.Add(this.pbLogo);
-			this.pnlForm.Controls.Add(this.btnAjouter30);
+			this.pnlForm.Controls.Add(this.btnAjouter3);
 			this.pnlForm.Controls.Add(this.lblDesc);
 			this.pnlForm.Controls.Add(this.lblTempsRestant);
 			resources.ApplyResources(this.pnlForm, "pnlForm");
@@ -146,7 +146,6 @@ namespace FermeturePC
 			this.ShowIcon = false;
 			this.ShowInTaskbar = false;
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-			this.Load += new System.EventHandler(this.FrmFermetureLoad);
 			((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
 			this.pnlForm.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -159,9 +158,9 @@ namespace FermeturePC
 		private System.Windows.Forms.Label lblDesc;
 		private System.Windows.Forms.Label lblTempsRestant;
 		private System.Windows.Forms.Button btnAnnuler;
-		private System.Windows.Forms.Button btnAjouter10;
-		private System.Windows.Forms.Button btnAjouter30;
-		private System.Windows.Forms.Button btnAjouter20;
+		private System.Windows.Forms.Button btnAjouter1;
+		private System.Windows.Forms.Button btnAjouter3;
+		private System.Windows.Forms.Button btnAjouter2;
 		private System.Windows.Forms.PictureBox pbLogo;
 	}
 }

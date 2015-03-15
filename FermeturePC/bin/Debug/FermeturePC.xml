@@ -61,7 +61,7 @@
         </member>
         <member name="M:FermeturePC.ControleurEtats.EtatOrdinateur">
             <summary>
-            Vérifier l'état de l'ordinateur(veille, ouvert, verrouillé, etc)
+            Vérifier l'état de l'ordinateur
             </summary>
             <returns></returns>
         </member>
@@ -98,41 +98,6 @@
         <member name="F:FermeturePC.frmFermeture.tempsRajouter">
             <summary>
             Indique le temps ajouté à l'heure de fermeture en ...
-            </summary>
-        </member>
-        <member name="F:FermeturePC.frmFermeture.formEstAffiche">
-            <summary>
-            Indique si le formulaire est maximisé
-            </summary>
-        </member>
-        <member name="F:FermeturePC.frmFermeture.tempsBtn1">
-            <summary>
-            Indique la valeur en unité de temps pour le bouton d'ajout 1
-            </summary>
-        </member>
-        <member name="F:FermeturePC.frmFermeture.tempsBtn2">
-            <summary>
-            Indique la valeur en unité de temps pour le bouton d'ajout 2
-            </summary>
-        </member>
-        <member name="F:FermeturePC.frmFermeture.tempsBtn3">
-            <summary>
-            Indique la valeur en unité de temps pour le bouton d'ajout 3
-            </summary>
-        </member>
-        <member name="F:FermeturePC.frmFermeture.textBtn1">
-            <summary>
-            Indique le texte du bouton de temps 1
-            </summary>
-        </member>
-        <member name="F:FermeturePC.frmFermeture.textBtn2">
-            <summary>
-            Indique le texte du bouton de temps 2
-            </summary>
-        </member>
-        <member name="F:FermeturePC.frmFermeture.textBtn3">
-            <summary>
-            Indique le texte du bouton de temps 3
             </summary>
         </member>
         <member name="F:FermeturePC.frmFermeture.fermer">
@@ -187,35 +152,30 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:FermeturePC.frmFermeture.BtnAjouter10Click(System.Object,System.EventArgs)">
+        <member name="M:FermeturePC.frmFermeture.BtnAjouter1Click(System.Object,System.EventArgs)">
             <summary>
-            Bouton qui permet d'ajouter 10 minutes au délai de fermeture
+            Bouton qui permet d'ajouter X secondes au délai de fermeture
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:FermeturePC.frmFermeture.BtnAjouter20Click(System.Object,System.EventArgs)">
+        <member name="M:FermeturePC.frmFermeture.BtnAjouter2Click(System.Object,System.EventArgs)">
             <summary>
-            Bouton qui permet d'ajouter 20 minutes au délai de fermeture
+            Bouton qui permet d'ajouter X secondes au délai de fermeture
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:FermeturePC.frmFermeture.BtnAjouter30Click(System.Object,System.EventArgs)">
+        <member name="M:FermeturePC.frmFermeture.BtnAjouter3Click(System.Object,System.EventArgs)">
             <summary>
-            Bouton qui permet d'ajouter 30 minutes au délai de fermeture
+            Bouton qui permet d'ajouter X secondes au délai de fermeture
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:FermeturePC.frmFermeture.GetInformationsSysteme">
+        <member name="M:FermeturePC.frmFermeture.cacherFormulaire(System.Boolean)">
             <summary>
-            Affiche les informations de l'ordinateur dans le controle
-            </summary>
-        </member>
-        <member name="M:FermeturePC.frmFermeture.cacherForm(System.Boolean)">
-            <summary>
-            Cacher la form en la positionnant en dehors de l'écran
+            Cacher le formualire en la positionnant en dehors de l'écran
             </summary>
         </member>
         <member name="F:FermeturePC.frmFermeture.components">
