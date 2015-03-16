@@ -206,7 +206,7 @@ namespace FermeturePC
 				listeParametres.texteBouton2 = "20 secondes";
 				listeParametres.valeurBouton3 = 30;
 				listeParametres.texteBouton3 = "30 secondes";
-				listeParametres.texteBoutons = "Pour continuer d'utiliser l'ordinateur";
+				listeParametres.texteBoutons = "Pour continuer d'utiliser l'ordinateur pendant:";
 				listeParametres.texteAnnuler = "Pour annuler la fermeture automatique";
 				listeParametres.logo = "Logo.png";
 				listeParametres.ForcerFermetureSiVerrouille = false;
