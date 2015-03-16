@@ -149,7 +149,7 @@ namespace FermeturePC
 			if(valeurDefaut || configOK) // Si le chargement de la configuration s'est bien passé...
 			{
 				fermer = true;
-				// Détermine l'action à prendre en cas de session verrouilé
+				// Détermine l'action à prendre en cas de session verrouillé
 				if(ControleurEtats.EtatOrdinateur() == UnEtatOrdinateur.verrouille)
 				{
 					fermer = listeParametres.ForcerFermetureSiVerrouille;
@@ -191,7 +191,7 @@ namespace FermeturePC
 			try
 			{
 				listeParametres = new DesParametres();
-				listeParametres.titre = "Fermeture des ordinateurs pédagogiques";
+				listeParametres.titre = "Fermeture des ordinateurs";
 				listeParametres.description = "Pour économiser de l'énergie, cet ordinateur va être arrêté pour la nuit. Pour éviter tout désagrément, nous vous recommandons fortement de sauvegarder votre travail en cours. Merci de votre collaboration.";
 				listeParametres.delaiMaximum = 86400;
 				listeParametres.delaiMinimum = 60;

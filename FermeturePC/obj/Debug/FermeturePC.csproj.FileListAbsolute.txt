@@ -16,3 +16,12 @@ F:\Devs\GitHub\FermeturePC\FermeturePC\obj\Debug\FermeturePC.frmFermeture.resour
 F:\Devs\GitHub\FermeturePC\FermeturePC\obj\Debug\FermeturePC.csproj.GenerateResource.Cache
 F:\Devs\GitHub\FermeturePC\FermeturePC\obj\Debug\FermeturePC.exe
 F:\Devs\GitHub\FermeturePC\FermeturePC\obj\Debug\FermeturePC.pdb
+C:\personnel\PROGRAMMATION\Git\FermeturePC\FermeturePC\bin\Debug\FermeturePC.exe.config
+C:\personnel\PROGRAMMATION\Git\FermeturePC\FermeturePC\bin\Debug\FermeturePC.xml
+C:\personnel\PROGRAMMATION\Git\FermeturePC\FermeturePC\bin\Debug\FermeturePC.exe
+C:\personnel\PROGRAMMATION\Git\FermeturePC\FermeturePC\bin\Debug\FermeturePC.pdb
+C:\personnel\PROGRAMMATION\Git\FermeturePC\FermeturePC\obj\Debug\FermeturePC.csprojResolveAssemblyReference.cache
+C:\personnel\PROGRAMMATION\Git\FermeturePC\FermeturePC\obj\Debug\FermeturePC.frmFermeture.resources
+C:\personnel\PROGRAMMATION\Git\FermeturePC\FermeturePC\obj\Debug\FermeturePC.csproj.GenerateResource.Cache
+C:\personnel\PROGRAMMATION\Git\FermeturePC\FermeturePC\obj\Debug\FermeturePC.exe
+C:\personnel\PROGRAMMATION\Git\FermeturePC\FermeturePC\obj\Debug\FermeturePC.pdb
